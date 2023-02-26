@@ -5,14 +5,31 @@
 */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@700&display=swap');
 
+
+/* 
+ Colors: 
+ green: #34AD54
+ orange: #FF9933
+
+*/
+:root {
+    --green: #34AD54;
+    --orange:  #FF9933;
+    --white: #FFFFFF;
+    --black: #263A4F;
+    --roboto: 'Roboto', sans-serif;
+    --openSans: 'Open Sans', sans-serif;
+}
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--openSans);
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
+    background-color: var(--white);
+    color: var(--black)
 }
 h1, h2, h3, h4, h5 {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--roboto);
 }
 p {
     margin-bottom: 0;
@@ -20,4 +37,50 @@ p {
 a {
     text-decoration: none;
     font-weight: 500;
+}
+
+/* 
+    Header area css
+*/
+.header-area {}
+
+.header-top {
+    padding: 15px 0;
+}
+.header-top .phone-box,
+.header-top .social-box {
+    font-size: 22px;
+}
+.header-top .social-box h3 {
+    font-family: var(--openSans);
+}
+.header-top .phone-box i {
+    color: var(--green);
+    margin-right: 7px;
+}
+.header-top .brand-box h1 {
+    font-size: 40px;
+    color: var(--orange);
+}
+.header-top .brand-box h1 span {
+    color: var(--green);
+}
+
+.header-top .social-box {
+    font-size: 16px;
+}
+.header-top .social-box a {
+    background-color: var(--green);
+    display: block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    text-align: center;
+
+    margin-left: 10px;
+
+}
+.header-top .social-box i {
+    color: var(--white);
 }

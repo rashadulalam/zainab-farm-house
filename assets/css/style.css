@@ -38,7 +38,22 @@ a {
     text-decoration: none;
     font-weight: 500;
 }
-
+.btn-primary {
+    background-color: var(--green);
+    border: 0;
+}
+.btn-primary:hover {
+    background-color: var(--green);
+    color: var(--black);
+}
+.btn-secondary {
+    background-color: var(--orange);
+    border: 0;
+}
+.btn-secondary:hover {
+    background-color: var(--orange);
+    color: var(--black);
+}
 /* 
     Header area css
 */

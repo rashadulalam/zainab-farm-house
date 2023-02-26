@@ -45,7 +45,7 @@ a {
 .header-area {}
 
 .header-top {
-    padding: 15px 0;
+    padding: 30px 0;
 }
 .header-top .phone-box,
 .header-top .social-box {
@@ -83,4 +83,44 @@ a {
 }
 .header-top .social-box i {
     color: var(--white);
+}
+
+/* Header bottom css */
+.header-btm {
+    background-color: var(--green);
+}
+.navbar-brand h1 {
+    color: var(--white);
+}
+.navbar-brand h1 span {
+    color: var(--orange)
+}
+.navbar-toggler {
+    background-color: var(--white) !important;
+}
+.nav-link {
+    color: var(--white);
+    padding: 25px 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+
+}
+.nav-link:hover,
+.nav-link.active {
+    background-color: var(--orange);
+    color: var(--white) !important;
+}
+
+.navbar {
+    padding: 0;
+}
+
+@media (max-width: 991px) {
+    .header-btm { 
+        padding: 20px 0;
+    }
+    .nav-link {
+        padding: 10px;
+    
+    }
 }

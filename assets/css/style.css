@@ -38,6 +38,12 @@ a {
     text-decoration: none;
     font-weight: 500;
 }
+.zf-bg-primary {
+    background-color: var(--green);
+}
+.zf-bg-secondary {
+    background-color: var(--orange);
+}
 .btn-primary {
     background-color: var(--green);
     border: 0;
@@ -92,9 +98,12 @@ a {
     line-height: 35px;
     border-radius: 50%;
     text-align: center;
-
     margin-left: 10px;
+    transition: .3s;
 
+}
+.header-top .social-box a:hover {
+    background-color: var(--orange);
 }
 .header-top .social-box i {
     color: var(--white);
@@ -138,4 +147,34 @@ a {
         padding: 10px;
     
     }
+}
+
+/* 
+ Feature area css
+*/
+.feature-area {
+    margin-top: -100px;
+    position: relative;
+    z-index: 1;
+}
+.feature-box {
+    height: 300px;
+    color: var(--white);
+    background-image: url(../images/vegetable.png);
+    background-repeat:  no-repeat;
+    background-position: bottom right;
+    background-size: contain;
+    
+}
+.feature-box h3 {
+    font-size: 30px;
+}
+.feature-box p {
+    font-size: 18px;
+}
+.feature-box a {
+    color: var(--white);
+    text-decoration: none;
+    margin-left: 0;
+    font-size: 18px;
 }

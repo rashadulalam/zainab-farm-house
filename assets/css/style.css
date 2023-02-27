@@ -19,6 +19,7 @@
     --black: #263A4F;
     --roboto: 'Roboto', sans-serif;
     --openSans: 'Open Sans', sans-serif;
+    --gray: #8D9AA8;
 }
 body {
     font-family: var(--openSans);
@@ -26,10 +27,11 @@ body {
     font-weight: 400;
     line-height: 1.5;
     background-color: var(--white);
-    color: var(--black)
+    color: var(--gray)
 }
 h1, h2, h3, h4, h5 {
     font-family: var(--roboto);
+    
 }
 p {
     margin-bottom: 0;
@@ -43,6 +45,12 @@ a {
 }
 .zf-bg-secondary {
     background-color: var(--orange);
+}
+.zf-border-primary {
+    border-color: var(--green) !important;
+}
+.zf-border-secondary {
+    border-color: var(--orange) !important;
 }
 .btn-primary {
     background-color: var(--green);
@@ -59,6 +67,17 @@ a {
 .btn-secondary:hover {
     background-color: var(--orange);
     color: var(--black);
+}
+.section-title {
+
+}
+.section-title h3 {
+    color: var(--green);
+    font-size: 22px;
+}
+.section-title h2 {
+    color: var(--black);
+    
 }
 /* 
     Header area css
@@ -177,4 +196,19 @@ a {
     text-decoration: none;
     margin-left: 0;
     font-size: 18px;
+}
+
+/* 
+ About area
+*/
+.about-image {
+    
+}
+
+.about-text i {
+    background-image: linear-gradient(var(--green), var(--orange));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: .5s;
+    font-size: 80px;
 }
